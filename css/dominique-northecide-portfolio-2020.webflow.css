@@ -177,6 +177,11 @@ blockquote {
   color: #fff;
 }
 
+span.a {
+  display: inline;
+
+}
+
 .navigation-bar {
   padding-top: 70px;
   padding-bottom: 70px;
