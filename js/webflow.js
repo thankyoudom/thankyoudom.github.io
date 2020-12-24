@@ -150,6 +150,17 @@ Webflow.require = function (name) {
   return modules[name];
 };
 
+
+$(function () {
+  $(window).on('scroll', function () {
+      if ( $(window).scrollTop() > 10 ) {
+          $('.navbar').addClass('active');
+      } else {
+          $('.navbar').removeClass('active');
+      }
+  });
+});
+
 function bindModule(module) {
   // If running in Webflow app, subscribe to design/preview events
   if (Webflow.env()) {
@@ -179,6 +190,9 @@ function addReady(module) {
 
   primary.push(module.ready);
 }
+
+
+
 
 function unbindModule(module) {
   // Unsubscribe module from window events
