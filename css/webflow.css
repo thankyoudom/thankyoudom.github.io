@@ -522,12 +522,13 @@ textarea.w-select {
   clear: both;
 }
 .w-container .w-row {
+  position: relative;
   margin-left: -10px;
   margin-right: -10px;
 }
 .w-row:before,
 .w-row:after {
-  content: " ";
+  content: "";
   display: table;
   grid-column-start: 1;
   grid-row-start: 1;
