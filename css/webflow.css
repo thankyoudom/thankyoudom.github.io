@@ -48,7 +48,8 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  background-color: #fff;
+  
+  background: #272727;
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -504,7 +505,11 @@ textarea.w-select {
 .w-icon-file-upload-uploading {
   height: 20px;
 }
+
+
 .w-container {
+
+  
   margin-left: auto;
   margin-right: auto;
   max-width: 940px;
@@ -517,6 +522,7 @@ textarea.w-select {
   grid-row-start: 1;
   grid-column-end: 2;
   grid-row-end: 2;
+  
 }
 .w-container:after {
   clear: both;
