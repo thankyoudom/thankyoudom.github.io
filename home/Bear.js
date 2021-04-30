@@ -12,14 +12,14 @@ const Bear = props => {
   const gltf = useLoader(
     GLTFLoader,
     process.env.NODE_ENV === "production"
-      ? "./DevelobearDraco.gltf"
-      : "./DevelobearDraco.gltf",
+      ? "./public/DevelobearDraco.gltf"
+      : "./public/DevelobearDraco.gltf",
     loader => {
       const dracoLoader = new DRACOLoader();
       dracoLoader.setDecoderPath(
         process.env.NODE_ENV === "production"
-          ? "./draco-gltf/"
-          : "./draco-gltf/"
+          ? "./public/draco-gltf/"
+          : "./public/draco-gltf/"
       );
       loader.setDRACOLoader(dracoLoader);
     }

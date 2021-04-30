@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { useFrame, useThree } from "react-three-fiber";
 import * as THREE from "three";
-import { AdditiveBlendingShader, VolumetricLightShader } from "../shaders";
+import { AdditiveBlendingShader, VolumetricLightShader } from "./shaders";
 import { FXAAShader } from "three/examples/jsm/shaders/FXAAShader";
 import { a, useSpring } from "react-spring/three";
 import { useHover } from "react-use-gesture";
@@ -75,7 +75,7 @@ const Effects = () => {
           material-uniforms-resolution-value={[1 / size.width, 1 / size.height]}
           renderToScreen
         />
-        <unrealBloomPass attachArray="passes" args={[undefined, 0.2, 0.2, 0]} />
+        <unrealBloomPass attachArray="passes" args={[undefined, .2, .2, 0]} />
         <filmPass attachArray="passes" args={[0.7, 0.5, 1000, false]} />
       </effectComposer>
     </>
