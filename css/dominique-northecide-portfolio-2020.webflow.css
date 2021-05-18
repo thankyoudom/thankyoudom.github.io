@@ -284,9 +284,12 @@ span.a {
 }
 
 .slide {
+  
   padding-top: 126px;
+  /*
   padding-right: 85px;
   padding-left: 85px;
+  */
 }
 
 .header-section {
