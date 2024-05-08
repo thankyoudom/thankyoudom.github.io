@@ -1,18 +1,18 @@
 body {
   width: 100vw;
+  height: 100vh;
   margin: 0;
   background: black;
   overflow: hidden;
+  display: flex;
   justify-content: center;
   align-items: center;
-  opacity:10%;
 }
 canvas {
-  position:relative;
+  position: absolute;
   top:0;
   left:0;
-  z-index: 2;
-  
+  z-index: -1;
 }
 .text-box {
   font-size: 60px;
@@ -41,24 +41,4 @@ canvas {
   border: 1px solid white;
   background: black;
   cursor: pointer;
-}
-
-.canvasContainer
-{
-    position: fixed;
-    left: 0px;
-    right: 0px;
-    top: 100px;
-    bottom: 100px;
-    z-index: 1;
-    background-color: Black;
-}
-
-.contextCanvas
-{   position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    z-index: 1;
 }
